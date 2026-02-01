@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0a0f1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #4da3ff;
+}
