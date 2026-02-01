@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Vaishnex Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="container">
+  <div class="page">
     <div class="card">
 
-      <!-- Logo -->
+      <!-- LOGO -->
       <div class="logo-ring">
-        <div class="logo-text">VAISHNEX</div>
+        <span>VAISHNEX</span>
       </div>
 
       <h2 id="welcomeText">Welcome to Vaishnex</h2>
 
-      <!-- Input -->
-      <input 
-        type="text" 
-        id="userInput" 
+      <!-- INPUT -->
+      <input
+        type="text"
+        id="userInput"
         placeholder="Email or mobile number"
-      />
-      <p class="error" id="inputError"></p>
+      >
+      <div class="error" id="inputError"></div>
 
-      <!-- Send OTP -->
       <button id="sendOtpBtn">Send OTP</button>
 
-      <!-- OTP Section -->
+      <!-- OTP SECTION -->
       <div id="otpSection" class="hidden">
-        <input 
-          type="text" 
-          id="otpInput" 
+
+        <input
+          type="text"
+          id="otpInput"
           placeholder="Enter OTP"
-        />
-        <p class="error" id="otpError"></p>
+        >
+        <div class="error" id="otpError"></div>
 
         <button id="verifyOtpBtn">Verify OTP</button>
 
-        <p class="resend">
+        <div class="resend-box">
           <span id="timerText">Resend OTP in 30s</span>
           <button id="resendBtn" disabled>Resend OTP</button>
-        </p>
+        </div>
+
       </div>
 
     </div>
